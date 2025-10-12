@@ -216,7 +216,7 @@ section {
 
 /* diseño para habilidades*/
 .skills {
-  max-width: 920px;
+  max-width: 100%;
   margin: 4px 2px 19.2px;
   padding: 7.15625px 3.8125px;
   font-family: Inter, system-ui, Arial, sans-serif;
