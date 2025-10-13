@@ -30,6 +30,11 @@ header p {
   font-size: 0.78rem;
   padding-top: 4px;
 }
+/* Añadiendo foto de prefil Estructura base*/
+.foto-perfil {
+  width: 22vw;
+  gap: 1rem;
+}
 
 h1 {
   /* Alineación del texto */
