@@ -32,8 +32,21 @@ header p {
 }
 /* Añadiendo foto de prefil Estructura base*/
 .foto-perfil {
-  width: 22vw;
-  gap: 1rem;
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #0a66c2; /* color profesional (azul LinkedIn-like) */
+  box-shadow: 0 8px 20px rgba(10, 102, 194, 0.12);
+  transition: transform 160ms ease, box-shadow 160ms ease;
+  flex-shrink: 0; /* evita que la imagen se reduzca en flexbox */
+}
+
+.foto-perfil:hover,
+.foto-perfil:focus {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 14px 30px rgba(10, 102, 194, 0.18);
+  outline: none;
 }
 
 h1 {
@@ -42,6 +55,11 @@ h1 {
 
   /* Grosor de la fuente negrita */
   font-weight: bold;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 #photo {
@@ -342,6 +360,18 @@ section {
   outline:none;
   border-color:var(--accent);
   box-shadow:0 6px 18px rgba(14,165,164,0.08);
+}
+
+#asunto{
+  padding:.55rem .65rem;
+  border:1px solid #6a6e74;
+  border-radius:8px;
+  background:transparent;
+  font-size:0.95rem;
+  color:var(--text);
+  transition:box-shadow .12s ease, border-color .12s ease;
+  resize:vertical;
+
 }
 
 /* Área de mensaje ocupa toda la fila */
